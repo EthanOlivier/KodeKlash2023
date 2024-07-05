@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vbxMain" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kodeklash2023.TitleScreenController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="btnExit" layoutX="665.0" layoutY="530.0" mnemonicParsing="false" onAction="#onbtnExitClick" onMouseEntered="#startHoverbtnExit" onMouseExited="#stopHoverbtnExit" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: #DAFF00;" text="Exit">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnStart" layoutX="288.0" layoutY="300.0" mnemonicParsing="false" onAction="#onbtnStartClick" onMouseDragOver="#startHoverbtnStart" onMouseEntered="#startHoverbtnStart" onMouseExited="#stopHoverbtnStart" prefHeight="122.0" prefWidth="224.0" style="-fx-background-color: DAFF00;" text="START">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnOne" layoutX="89.0" layoutY="200.0" mnemonicParsing="false" onAction="#onbtnOneClick" onMouseDragOver="#startHoverbtnOne" onMouseEntered="#startHoverbtnOne" onMouseExited="#stopHoverbtnOne" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DAFF00;" text="1 PLAYER" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTwo" layoutX="512.0" layoutY="200.0" mnemonicParsing="false" onAction="#onbtnTwoClick" onMouseDragOver="#startHoverbtnTwo" onMouseEntered="#startHoverbtnTwo" onMouseExited="#stopHoverbtnTwo" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DAFF00;" text="2 PLAYERS" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" layoutY="530.0" mnemonicParsing="false" onAction="#onbtnBackClick" onMouseDragOver="#startHoverbtnBack" onMouseEntered="#startHoverbtnBack" onMouseExited="#stopHoverbtnBack" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: #DAFF00;" text="Back" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
